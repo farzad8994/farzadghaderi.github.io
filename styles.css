@@ -236,3 +236,36 @@ footer {
     padding-left: 22px;
   }
 }
+
+.profile-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-photo {
+  width: 170px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 620px) {
+  .profile-layout {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .profile-photo {
+    width: 135px;
+    height: 150px;
+  }
+}
